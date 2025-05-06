@@ -10,3 +10,11 @@ btnMenuHamburguer.addEventListener("click", () => {
         menuHamburger.classList.add("nav-hamburguer");
     }
 });
+
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
