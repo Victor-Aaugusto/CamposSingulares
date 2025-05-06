@@ -5,6 +5,11 @@
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body{
     position: relative;
 }
