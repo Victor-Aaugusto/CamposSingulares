@@ -138,7 +138,7 @@ header img{
 
 .contato {
     background: linear-gradient(90deg, #0e5da2, #022340);
-    padding: 20px 0;
+    padding-top: 20px;
     height: 60vh;
     width: 100%;
     text-align: center;
