@@ -35,7 +35,7 @@ header nav,li a{
 
 header nav a:hover{
     color: #f7b733;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #f7b733;
     font-size: 19px;
     transition: 0.3s;
 }
@@ -46,7 +46,7 @@ header img{
 
 .container{
     background: linear-gradient(90deg, #0e5da2, #022340);
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
     width: 60%;
 }
@@ -89,9 +89,9 @@ header img{
 
 
 .texto-gabriel{
-    height: 50vh;
+    height: 70vh;
     padding-top: 50px;
-    line-height: 47px;
+    line-height: 40px;
     color: #fff;
     width: 100%;
     background: linear-gradient(90deg, #0e5da2, #022340);
@@ -196,10 +196,36 @@ option{
     background-color: #e57c00;
 }
 
+
+footer{
+    width: 100%;
+    background: linear-gradient(90deg, #0e5da2, #022340);
+    text-align: center;
+    margin-top: 30px auto;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+footer img{
+    width: 20%;
+}
+
+
 .img-whatsapp{
     width: 80px;
     border-radius: 100px;
+    transition: 1.5s;
 }
+
+.img-whatsapp:hover, .img-whatsapp:focus{
+    cursor: pointer;
+    width: 100px;
+    border-radius: 100px;
+}
+
 
 .whatsappp{
     position: fixed;
@@ -210,12 +236,270 @@ option{
 
 .success{
     color: #f7b733;
-    padding-top: 60px;
+    padding-top: 200px;
     text-align: center;
 }
 
 .error{
     color: #f73333;
-    padding-top: 30px;
+    padding-top: 200px;
     text-align: center;
+}
+
+.desenvolvimento{
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    *{
+        line-height: normal;
+    }
+
+    * h2{
+        font-size: 20px;
+    }
+
+    * h3{
+        font-size: 20px;
+    }
+
+    * p{
+        font-size: 20px;
+        line-height: normal;
+        width: 90%;
+    }
+
+    .container{
+        width: 60%;
+    }
+
+    header img{
+        width: 80px;
+    }
+
+    header{
+        position: fixed;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .menu-hamburguer{
+        position: relative;
+    }
+
+    .img-menu-hamburguer{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-hamburguer{
+        position: absolute;
+        top: 80%;
+        right: 10%;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-hamburguer .ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 100%;
+        background: transparent;
+        display: none;
+    }
+
+    .nav-hamburguer-active, ul, li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        text-align: justify;
+        right: 5%;
+        display: block;
+    }
+
+    .nav-hamburguer-active a{
+        font-size: 12px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        padding: 40px 0;
+        align-items: center;
+        justify-content: center;
+        line-height: 27px;
+    }
+
+    .banner .texto-apresentacao h2 {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    .banner .texto-apresentacao p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .texto-gabriel{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .texto-gabriel, .texto-apresentacao-gabriel{
+        width: 100%;
+        font-size: 16px;        
+    }
+
+    .texto-apresentacao-gabriel p{
+        width: 100%;
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    .especialidades{
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .especialidades h2{
+        font-size: 20px;
+    }
+
+    .especialidades p{
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .especialidades .cards img{
+        width: 260px;
+        height: 200px;
+        margin: 30px auto;
+    }
+
+    .contato{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    form .form-field{
+        width: 200px;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 70vh;
+    }
+
+    footer img{
+        width: 50%;
+    }
+
+    footer p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+    }
+    
+    .desenvolvimento p{
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        line-height: normal;
+    }
+
+}
+
+@media  (min-width: 551px) and (max-width: 1023px) {
+    header .menu-hamburguer{
+        display: none;
+    }
+
+    header nav a{
+        font-size: 15px;
+    }
+
+    .banner h2{
+        font-size: 28px;
+    }
+
+    .banner p{
+        margin: 10px;
+        font-size: 20px;
+        line-height: 28px;
+        width: 100%;
+    }
+
+    .texto-gabriel{
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .texto-gabriel h2{
+        font-size: 20px;
+    }
+
+    .texto-gabriel p{
+        font-size: 16px;
+        line-height: normal;
+        width: 100%;
+    }
+
+    .especialidades{
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    .especialidades h2{
+        font-size: 20px;
+    }
+
+    .especialidades p{
+        font-size: 16px;
+        line-height: normal;
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .desenvolvimento{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .menu-hamburguer{
+        display: none;
+    }
 }
