@@ -354,12 +354,12 @@ html {
     }
 
     .banner .texto-apresentacao h2 {
-        font-size: 20px;
+        font-size: 30px;
         margin: 20px auto;
     }
 
     .banner .texto-apresentacao p {
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
     }
 
@@ -405,7 +405,7 @@ html {
 
     .contato{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
 
     form .form-field{
@@ -415,7 +415,6 @@ html {
 
     footer{
         width: 100%;
-        border-top: 0.5px solid #fff;
     }
 
     footer img{
