@@ -16,7 +16,7 @@ header {
     align-items: center; /* Alinha verticalmente */
     padding: 20px 0; /* Adiciona espaço nas laterais */
     height: 100px;
-    position: fixed;
+    position: absolute;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -73,6 +73,7 @@ header img{
     color: #ffff;
     line-height: 46px;
     width: 60%;
+    height: auto;
     align-items: center;
 }
 
@@ -89,7 +90,7 @@ header img{
 
 
 .texto-gabriel{
-    height: 70vh;
+    max-height: 70vh;
     padding-top: 50px;
     line-height: 40px;
     color: #fff;
@@ -119,6 +120,7 @@ header img{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex: 1 0 auto;
 }
 
 .especialidades .cards div{
@@ -334,7 +336,7 @@ html {
     }
 
     .nav-hamburguer-active a{
-        font-size: 14px;
+        font-size: 12px;
         width: 100%;
         margin-top: 0px;
     }
@@ -463,7 +465,7 @@ html {
 
     .texto-gabriel{
         width: 100%;
-        min-height: 80vh;
+        max-height: 80vh;
     }
 
     .texto-gabriel h2{
@@ -489,14 +491,20 @@ html {
         font-size: 16px;
         line-height: normal;
         width: 100%;
+        margin: 10px;
     }
 
     footer{
         display: flex;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        max-height: 80vh;
+        height: auto;
     }
+    footer img{
+        width: 200px;
+    }
+
     .desenvolvimento{
         text-align: center;
     }
