@@ -36,7 +36,7 @@ header nav,li a{
 header nav a:hover{
     color: #f7b733;
     border-bottom: 1px solid #f7b733;
-    font-size: 19px;
+    font-size: 13px;
     transition: 0.3s;
 }
 
