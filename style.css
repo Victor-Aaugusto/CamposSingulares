@@ -291,6 +291,7 @@ html {
         position: fixed;
         justify-content: space-between;
         align-items: start;
+        background: linear-gradient(90deg, #0e5da2, #022340);
     }
 
     .menu-hamburguer{
