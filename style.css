@@ -36,7 +36,7 @@ header nav,li a{
 header nav a:hover{
     color: #f7b733;
     border-bottom: 1px solid #f7b733;
-    font-size: 13px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -296,7 +296,6 @@ html {
 
     .menu-hamburguer{
         position: relative;
-
     }
 
     .menu-hamburguer-active{
@@ -321,28 +320,27 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
     }
 
     .nav-hamburguer .ul{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: justify;
         width: 100%;
-        background: transparent;
         display: none;
     }
 
     .nav-hamburguer-active, ul, li{
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-        text-align: justify;
-        right: 5%;
+        right: 0%;
         display: block;
         padding-bottom: 10px;
+        text-align: left;
     }
 
     .nav-hamburguer-active a{
