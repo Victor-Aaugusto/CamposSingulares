@@ -295,6 +295,14 @@ html {
 
     .menu-hamburguer{
         position: relative;
+
+    }
+
+    .menu-hamburguer-active{
+        background: linear-gradient(90deg, #0e5da2, #022340);
+        border-radius: 20px;
+        width: 30%;
+        height: auto;
     }
 
     .img-menu-hamburguer{
@@ -333,12 +341,13 @@ html {
         text-align: justify;
         right: 5%;
         display: block;
+        padding-bottom: 10px;
     }
 
     .nav-hamburguer-active a{
         font-size: 12px;
         width: 100%;
-        margin-top: 0px;
+        margin: 5px;
     }
 
     header nav{
